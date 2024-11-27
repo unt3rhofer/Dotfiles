@@ -1,3 +1,5 @@
+Here is a quick guide on getting started, more information is awailable at the [Dotfiles Wiki](https://github.com/unt3rhofer/Dotfiles/wiki)!
+
 # Clone the Dotfiles repo
 All guides assume you have the Dotfiles repo cloned in your home directory.
 ```bash
