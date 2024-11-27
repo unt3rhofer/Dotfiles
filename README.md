@@ -1,41 +1,4 @@
-Here is a quick guide on getting started, further information is awailable at the [Dotfiles Wiki](https://github.com/unt3rhofer/Dotfiles/wiki)!
+# Introduction
+This repository was originally just a place where I stored my dotfiles as a backup, but after about a year of googling, reading all kinds of documentation, posting countless questions on Reddit, and having many arguments with ChatGPT on how things should be done, I have decided to compile a list of resources, tutorials, common issues, and general tips & tricks that I learned about on my _endeavors_. I will try my best to keep the wiki organized and coherent but that might not always turn out to be the case.
 
-# Clone the Dotfiles repo
-All guides assume you have the Dotfiles repo cloned in your home directory.
-```bash
-git clone https://github.com/unt3rhofer/Dotfiles.git
-```
-
-# Yay AUR helper
-Yay is a so called "AUR helper" for arch linux's package manager pacman. It provides a broader selection of packages.
-## Installation
-You can get yay from it's creator GitHub [repo](https://github.com/Jguer/yay).
-```bash
-sudo pacman -S --needed git base-devel
-git clone https://aur.archlinux.org/yay.git
-cd yay
-makepkg -si
-```
-That's it, we now have yay installed!
-### Cleanup
-You can safely remove the yay directory that is in your home directory with:
-```bash
-rm -fr yay
-```
-## Syntax guide
-**installing a package**
-```bash
-yay -S package_name
-```
-**uninstalling a package**
-```bash
-yay -Rns package_name
-```
-**cleaning up orphaned packages**
-```bash
-yay -Yc
-```
-
-
----
-Read the [Dotfiles Wiki](https://github.com/unt3rhofer/Dotfiles/wiki) for more guides and information!
+The wiki will primarily cover setting up, optimizing and refining the i3 window manager and take you through basic initialization steps after a fresh install of Arch linux.
