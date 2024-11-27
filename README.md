@@ -69,4 +69,4 @@ kitten themes
 
 
 ---
-Read the [Dotfiles Wiki](https://github.com/unt3rhofer/Dotfiles/wiki) for more infomration!
+Read the [Dotfiles Wiki](https://github.com/unt3rhofer/Dotfiles/wiki) for more guides and information!
