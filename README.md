@@ -1,4 +1,4 @@
-Here is a quick guide on getting started, more information is awailable at the [Dotfiles Wiki](https://github.com/unt3rhofer/Dotfiles/wiki)!
+Here is a quick guide on getting started, further information is awailable at the [Dotfiles Wiki](https://github.com/unt3rhofer/Dotfiles/wiki)!
 
 # Clone the Dotfiles repo
 All guides assume you have the Dotfiles repo cloned in your home directory.
@@ -34,37 +34,6 @@ yay -Rns package_name
 **cleaning up orphaned packages**
 ```bash
 yay -Yc
-```
-# Kitty terminal
-I like the kitty terminal because of how easy it is to switch themes and ... it's called **kitty**, c'mon.
-## Dependencies
-* [yay](#yay-aur-helper)
-## Installation
-```bash
-yay -S kitty
-```
-you can now uninstall xterm if you like
-```bash
-yay -Rns xterm
-```
-## Setup
-Navigate to the location of your kitty configuration directory. In my case that is:
-```bash
-cd ~/.config
-```
-Remove the kitty directory (trust me on this one).
-```bash
-sudo rm -fr kitty
-```
-Create a symbolic link to the kitty configuration from the Dotfiles directory.
-```bash
-sudo ln -sf ~/Dotfiles/kitty ~/.config
-```
-That's it, kitty is now installed and configured!
-### Tips & Tricks
-You can choose many other themes for the kitty terminal by running:
-```bash
-kitten themes
 ```
 
 
