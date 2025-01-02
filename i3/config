@@ -1,6 +1,7 @@
 include /home/martin/.config/i3/appearance
 include /home/martin/.config/i3/keybinds
 include /home/martin/.config/i3/peripherals
+include /home/martin/.config/i3/startup
 include /home/martin/.config/i3/workspaces
 
 set $mod Mod4
@@ -11,6 +12,9 @@ set $refresh_i3status killall -SIGUSR1 i3status
 
 #Autotiling
 exec_always --no-startup-id autotiling
+
+#Annoyances
+exec_always pkill blueman-applet
 
 #Polybar
 #exec_always bash /home/martin/Dotfiles/polybar/scripts/startup.sh

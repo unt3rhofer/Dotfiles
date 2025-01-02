@@ -82,4 +82,4 @@ bindsym $mod+Shift+s exec --no-startup-id maim --select | xclip -selection clipb
 
 #APPLICATIONS
 #browser
-bindsym $mod+g exec brave
+bindsym $mod+g exec google-chrome-stable
