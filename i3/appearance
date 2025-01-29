@@ -42,7 +42,8 @@ gaps inner 7
 gaps outer 5
 
 #WALLPAPER
-exec_always feh --bg-scale ~/Dotfiles/Wallpapers/wallpaper_samurai+temple.png
+#exec_always feh --bg-scale ~/Dotfiles/Wallpapers/wallpaper_samurai+temple.png
+exec_always feh --bg-scale /home/martin/Dotfiles/Wallpapers/wallpaper_south-park+stan.png
 
 #TRANSPARENCY
 exec_always picom

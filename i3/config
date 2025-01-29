@@ -10,11 +10,17 @@ exec --no-startup-id dex-autostart --autostart --environment i3
 exec --no-startup-id nm-applet
 set $refresh_i3status killall -SIGUSR1 i3status
 
+#Volumeicon
+exec volumeicon
+
 #Autotiling
 exec_always --no-startup-id autotiling
 
 #Annoyances
 exec_always pkill blueman-applet
+
+# enter fullscreen mode for the focused container
+bindsym $mod+f fullscreen
 
 #Polybar
 #exec_always bash /home/martin/Dotfiles/polybar/scripts/startup.sh
