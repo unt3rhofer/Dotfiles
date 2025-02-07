@@ -18,6 +18,8 @@ exec_always --no-startup-id autotiling
 
 #Annoyances
 exec_always pkill blueman-applet
+exec_always xset s off
+exec_always xset -dpms
 
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen
