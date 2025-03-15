@@ -1,7 +1,6 @@
 #!bin/i3config
 #FONT
 font pango:Noto Sans 10
-
 #WINDOW CUSTOMIZATION
 #Catpuccin Mocha
 set $background            #1e1e2e

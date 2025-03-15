@@ -1,12 +1,11 @@
 # BEGIN_KITTY_THEME
-# Monokai Classic
+# 1984 Dark
 include current-theme.conf
 # END_KITTY_THEME
 #
 # TRANSPARENT BACGROUND
-dynamic_background_opacity yes
+dynamic_background_opacity yes 
 background_opacity 0.8
-
-#DISABLE SOUND
+ 
+# DISABLE SOUND
 enable_audio_bell no
-

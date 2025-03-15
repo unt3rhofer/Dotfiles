@@ -10,9 +10,8 @@ exec --no-startup-id dex-autostart --autostart --environment i3
 exec --no-startup-id nm-applet
 set $refresh_i3status killall -SIGUSR1 i3status
 
-#Volumeicon
-exec volumeicon
-
+#startup
+exec startup.sh
 #Autotiling
 exec_always --no-startup-id autotiling
 

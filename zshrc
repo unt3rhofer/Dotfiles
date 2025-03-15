@@ -9,3 +9,4 @@ source $ZSH/oh-my-zsh.sh
 export RANGER_LOAD_DEFAULT_RC=false
 export CURRENT_TIME=$(date +"%Y-%m-%d %H:%M:%S")
 
+alias feh='feh --image-bg black -Z -.'
