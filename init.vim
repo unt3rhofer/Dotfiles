@@ -19,6 +19,7 @@ call plug#begin()
 	Plug 'francoiscabrol/ranger.vim'
 	Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 	Plug 'nvim-tree/nvim-tree.lua'
+	Plug 'nvim-tree/nvim-web-devicons'
 call plug#end()
 
 colorscheme catppuccin_mocha 
