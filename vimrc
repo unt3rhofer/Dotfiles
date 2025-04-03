@@ -3,12 +3,6 @@ autocmd BufRead,BufNewFile /home/martin/Dotfiles/sway/* setlocal filetype=i3conf
 
 syntax on
 
-:tnoremap <esc> <C-\><C-n>
-function CP2XCLIP()
-:call system('xclip -selection c', @r)
-endfunction
-vnoremap z "ry:call CP2XCLIP()<cr>
-
 set number
 set relativenumber
 set autoindent
@@ -20,9 +14,11 @@ set encoding=utf-8
 call plug#begin()
 	Plug 'catppuccin/vim', { 'as': 'catppuccin' }
 	Plug 'dracula/vim', { 'as': 'dracula' }
+	Plug 'francoiscabrol/ranger.vim'
+	Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+
 call plug#end()
 
 colorscheme catppuccin_mocha 
 set termguicolors
 highlight LineNr guifg=#ffffff
-
