@@ -14,15 +14,16 @@ set shiftwidth=4
 set encoding=utf-8
 
 call plug#begin()
-	Plug 'catppuccin/vim', { 'as': 'catppuccin' }
+	Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
 	Plug 'dracula/vim', { 'as': 'dracula' }
 	Plug 'francoiscabrol/ranger.vim'
 	Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 	Plug 'nvim-tree/nvim-tree.lua'
 	Plug 'nvim-tree/nvim-web-devicons'
+	Plug 'akinsho/toggleterm.nvim', {'tag' : '*'}
 call plug#end()
 
-colorscheme catppuccin_mocha 
+colorscheme catppuccin-mocha 
 set termguicolors
 highlight LineNr guifg=#ffffff
 
@@ -39,6 +40,8 @@ EOF
 lua << EOF
 	require("nvim-tree").setup()
 EOF
+
+lua require("toggleterm").setup() 
 
 nnoremap <leader>e :NvimTreeToggle<CR>
 

@@ -72,6 +72,6 @@ bindsym $mod+Shift+s exec --no-startup-id maim --select | xclip -selection clipb
 
 #APPLICATIONS
 #browser
-bindsym $mod+g exec firefox 
+bindsym $mod+g exec google-chrome-stable 
 #file manager
 bindsym $mod+e exec --no-startup-id kitty -e "ranger"
