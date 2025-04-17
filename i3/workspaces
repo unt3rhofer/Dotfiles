@@ -71,6 +71,10 @@ bindsym $mod+Shift+Mod1+3 move container to workspace number $ws13
 bindsym $mod+Shift+Mod1+4 move container to workspace number $ws14
 bindsym $mod+Shift+Mod1+5 move container to workspace number $ws15
 
+#TILING
+bindsym $mod+w layout tabbed
+bindsym $mod+s layout toggle split
+
 #BINDING APPLICATIONS
 #Telegram
 assign [class="TelegramDesktop"] $ws10
