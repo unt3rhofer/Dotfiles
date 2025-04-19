@@ -11,8 +11,7 @@ exec --no-startup-id nm-applet
 set $refresh_i3status killall -SIGUSR1 i3status
 
 #Autotiling
-exec_always --no-startup-id autotiling
-focus_wrapping yes
+#exec_always --no-startup-id autotiling
 
 #Annoyances
 exec_always pkill blueman-applet
