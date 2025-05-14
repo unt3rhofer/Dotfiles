@@ -1,0 +1,23 @@
+set adjust-open width
+set pages-per-row 1
+set selection-clipboard clipboard
+
+# Background of the Zathura window
+set default-bg "#1e1e2e"
+
+# Foreground (text color)
+set default-fg "#cdd6f4"
+
+# Status bar colors
+set statusbar-bg "#1e1e2e"
+set statusbar-fg "#f5e0dc"
+
+# Input bar (e.g. when you type commands)
+set inputbar-bg "#1e1e2e"
+set inputbar-fg "#f5e0dc"
+
+# Completion menu (when using tab completion)
+set completion-bg "#1e1e2e"
+set completion-fg "#cdd6f4"
+set completion-highlight-bg "#585b70"
+set completion-highlight-fg "#f5e0dc"

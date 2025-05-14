@@ -1,0 +1,8 @@
+{
+    "layer": "bottom",
+    "position": "top",
+    "height": 12,
+    "spacing": 5,
+    "modules-left": ["sway/workspaces","sway/mode"],
+    "modules-right": ["clock", "pulseaudio", "battery", "tray"]
+}
