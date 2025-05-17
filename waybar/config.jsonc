@@ -2,9 +2,94 @@
     "layer": "bottom",
     "position": "top",
     "height": 12,
-    "spacing": 5,
-    "modules-left": ["sway/workspaces","sway/mode"],
-    "modules-right": ["clock", "pulseaudio", "battery", "tray"]
+    "spacing": 0,
+    "modules-left": 
+    [
+//        "custom/icon",
+        "sway/workspaces",
+        "sway/scratchpad",
+        "sway/mode",
+    ],
 
-    Jako volim Arwen
+//    "custom/icon":
+//    {
+//        "exec": "echo "󰄛"
+//    },
+
+    "modules-right": 
+    [
+        "clock",
+        "pulseaudio",
+        //"network",
+        "battery",
+        "tray",
+    ],
+    "sway/workspaces": {
+        "format": "{icon}",
+        "format-icons": {
+            "9": "󰑈",
+            "10": "󰻞"
+        },
+    },
+
+    "sway/mode": {
+        "format": "<span style=\"italic\">{}</span>"
+    },
+
+    "sway/scratchpad": {
+        "format": "{icon} {count}",
+        "show-empty": false,
+        "format-icons": [""],
+        "tooltip": true,
+        "tooltip-format": "{app}: {title}"
+    },
+     "clock": {
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": "{:%d-%m-%Y}"
+    },
+    "pulseaudio": { 
+        "format": "{volume}% {icon}", 
+        "format-muted": "{volume}% ",
+        "format-icons": { 
+            "default":
+            [
+                "",
+                "",
+                ""
+            ]
+
+        },
+        "scroll-step": 5,
+        "on-click": "pamixer --toggle-mute"
+    },
+    "network": {
+        // "interface": "wlp2*", // (Optional) To force the use of this interface
+        "format-wifi": "{essid} ",
+        "format-ethernet": "{ipaddr}/{cidr} 󰈀",
+        "format-disconnected": "Disconnected ⚠",
+        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+    },
+    "battery":{
+        "format": "{capacity}% {icon}",
+        "format-full": "{capacity}% ",
+        "format-charging": "{capacity}% {icon}",
+        //  󰂄
+        "format-plugged": "{capacity}% ",
+        "states": {
+            "good": 75,
+            "warning": 20,
+            "critical": 10
+        },
+        
+        "format-icons":
+        [
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+
+    },
+
 }
