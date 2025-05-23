@@ -17,7 +17,7 @@ vim.api.nvim_create_autocmd("CmdlineLeave", {
 })
 
 -- Terminal: Esc to normal mode
-map("t", "<Esc>", "<C-\\><C-n>", opts)
+map("t", "<leader><Esc>", "<C-\\><C-n>", opts)
 
 -- Window navigation with Alt+hjkl
 map("n", "<A-h>", "<C-w>h", opts)

@@ -5,7 +5,7 @@ return {
   version = "*", -- or specific tag: "v2.*"
   config = function()
     require("toggleterm").setup({
-      size = 70,
+      size = 20,
       open_mapping = [[<c-\>]], -- Toggle terminal with Ctrl+\
       hide_numbers = true,
       shade_terminals = true,
@@ -14,7 +14,7 @@ return {
       insert_mappings = true,
       terminal_mappings = true,
       persist_size = true,
-      direction = "vertical", -- "vertical" | "horizontal" | "tab" | "float"
+      direction = "horizontal", -- "vertical" | "horizontal" | "tab" | "float"
       float_opts = {
         border = "curved",
         winblend = 3,

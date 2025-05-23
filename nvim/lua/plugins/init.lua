@@ -5,4 +5,6 @@ require("plugins.catppuccin"),
 require("plugins.catppuccin"),
 require("plugins.nvim-tree"),
 require("plugins.toggleterm"),
-require("plugins.cmp") }
+require("plugins.cmp"), 
+require("plugins.render-markdown")
+}
