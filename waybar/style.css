@@ -49,6 +49,7 @@ button:hover {
     box-shadow: inset 0 -3px @crust;
 }
 
+
 #clock {
     padding: 0 10px;
     background-color: @blue;
@@ -89,10 +90,37 @@ button:hover {
     color: @base;
     box-shadow: inset 0 -3px @crust;
 }
+#battery.warning {
+    padding: 0 10px;
+    background-color: @peach;
+    color: @base;
+    box-shadow: inset 0 -3px @crust;
+}
+
+#battery.critical {
+    padding: 0 10px;
+    background-color: @red;
+    color: @base;
+    box-shadow: inset 0 -3px @crust;
+}
 
 #tray {
    padding: 0 10px;
-   background-color: @sapphire;
+       background-color: @sapphire;
    color: @base;
    box-shadow: inset 0 -3px @crust;
+}
+
+
+#custom-bitwarden {
+    padding: 0 10px;
+    background-color: @mauve;
+    color: @base;
+    box-shadow: inset 0 -3px @crust;
+}
+#custom-gammastep {
+    padding: 0 10px;
+    background-color: @peach;
+    color: @base;
+    box-shadow: inset 0 -3px @crust;
 }

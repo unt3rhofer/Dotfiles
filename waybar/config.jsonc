@@ -3,26 +3,23 @@
     "position": "top",
     "height": 12,
     "spacing": 0,
+    "font": "JetBrainsMono Nerd Font 11",
     "modules-left": 
     [
-//        "custom/icon",
         "sway/workspaces",
         "sway/scratchpad",
         "sway/mode",
     ],
 
-//    "custom/icon":
-//    {
-//        "exec": "echo "󰄛"
-//    },
 
     "modules-right": 
     [
         "clock",
         "pulseaudio",
-        //"network",
         "battery",
         "tray",
+        "custom/bitwarden",
+        "custom/gammastep"
     ],
     "sway/workspaces": {
         "format": "{icon}",
@@ -43,6 +40,7 @@
         "tooltip": true,
         "tooltip-format": "{app}: {title}"
     },
+    
      "clock": {
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format-alt": "{:%d-%m-%Y}"
@@ -72,7 +70,7 @@
     "battery":{
         "format": "{capacity}% {icon}",
         "format-full": "{capacity}% ",
-        "format-charging": "{capacity}% {icon}",
+        "format-charging": "{capacity}% 󱐋",
         //  󰂄
         "format-plugged": "{capacity}% ",
         "states": {
@@ -91,5 +89,16 @@
         ],
 
     },
+
+    "custom/bitwarden":{
+        "format": "",
+        "on-click": "/home/martin/Dotfiles/waybar/scripts/bitwarden.fish"
+    },
+
+    "custom/gammastep":{
+        "format": "󱩌",
+        "on-click": "/home/martin/Dotfiles/waybar/scripts/gammastep.bash"
+    },
+
 
 }
