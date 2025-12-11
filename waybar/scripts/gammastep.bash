@@ -5,7 +5,7 @@ if pgrep -x "gammastep" > /dev/null; then
     pkill gammastep
     echo "󰛨"  # Icon for "off"
 else
-    gammastep &
+    gammastep -O 3000 &
     echo "󰔟"  # Icon for "on"
 fi
 
